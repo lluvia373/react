@@ -22,7 +22,7 @@ class Clock extends React.Component {
                <h2>
                     {date.getDay() === 0 ? "Sunday"
                     : date.getDay() === 1 ? "Monday"
-                    : date.getDay() === 2 ? "Thesday"
+                    : date.getDay() === 2 ? "Tuesday"
                     : date.getDay() === 3 ? "Wednesday"
                     : date.getDay() === 4 ? "Thursday"
                     : date.getDay() === 5 ? "Friday"
