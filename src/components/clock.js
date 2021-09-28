@@ -15,8 +15,8 @@ class Clock extends React.Component {
        return(
            <div>
                <h1>
-                   {date.getFullYear()}
-                   {date.getMonth() + 1}
+                   {date.getFullYear()}{'  '}
+                   {date.getMonth() + 1}{'  '}
                    {date.getDate()}
                </h1>
                <h2>
@@ -30,7 +30,7 @@ class Clock extends React.Component {
                     }   
                </h2>
                <h2>
-                   {date.getHours() < 10 ? "0" + date.getHours() : date.getHours()}
+                   {date.getHours() < 10 ? "0" + date.getHours() : date.getHours()}{'  '}
                    {date.getMinutes() < 10 ? "0" + date.getMinutes(): date.getMinutes()}
                </h2>
                
