@@ -17,9 +17,13 @@ class Todo extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({
-            todoList: JSON.parse(localStorage.getItem("todoList") || [])
-        });
+        try{
+            this.setState({
+                todoList: JSON.parse(localStorage.getItem("todoList") || [])
+            });
+        } catch (e){
+            
+        }
     }
 
     handleInputKeyPress = event => {
